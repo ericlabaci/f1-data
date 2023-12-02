@@ -1,12 +1,12 @@
 import Foundation
 import UIKit
 
-protocol LoadingDelegate: AnyObject {
+protocol LoadingDisplayable: AnyObject {
     func startLoading()
     func stopLoading()
 }
 
-extension LoadingDelegate where Self: UIViewController {
+extension LoadingDisplayable where Self: UIViewController {
     func startLoading() {
 
     }

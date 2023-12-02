@@ -1,6 +1,6 @@
 import Foundation
 
-protocol RaceResultsViewModelDelegate: AnyObject, LoadingDelegate {
+protocol RaceResultsViewModelDelegate: AnyObject, LoadingDisplayable {
     func didFetchResults()
 }
 

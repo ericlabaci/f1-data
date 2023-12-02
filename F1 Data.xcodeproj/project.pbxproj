@@ -10,7 +10,7 @@
 		88A9C01C2B1B3F5A005FE035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C01B2B1B3F5A005FE035 /* AppDelegate.swift */; };
 		88A9C01E2B1B3F5A005FE035 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C01D2B1B3F5A005FE035 /* SceneDelegate.swift */; };
 		88A9C0282B1B3F63005FE035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0262B1B3F63005FE035 /* LaunchScreen.storyboard */; };
-		88A9C0332B1B3F64005FE035 /* F1_DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0322B1B3F64005FE035 /* F1_DataTests.swift */; };
+		88A9C0332B1B3F64005FE035 /* SeasonRacesListingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0322B1B3F64005FE035 /* SeasonRacesListingViewModelTests.swift */; };
 		88A9C04D2B1B3FC1005FE035 /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = 88A9C04C2B1B3FC1005FE035 /* Cartography */; };
 		88A9C0502B1B3FE5005FE035 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 88A9C04F2B1B3FE5005FE035 /* Alamofire */; };
 		88A9C0532B1B4037005FE035 /* SeasonRacesListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0522B1B4037005FE035 /* SeasonRacesListingViewController.swift */; };
@@ -26,7 +26,7 @@
 		88A9C0AF2B1B4BD9005FE035 /* NetworkingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0AE2B1B4BD9005FE035 /* NetworkingConfiguration.swift */; };
 		88A9C0B22B1B4C3D005FE035 /* SeasonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0B12B1B4C3D005FE035 /* SeasonInfo.swift */; };
 		88A9C0B42B1B4DCC005FE035 /* SeasonRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0B32B1B4DCC005FE035 /* SeasonRequests.swift */; };
-		88A9C0B72B1B4F0B005FE035 /* UIViewController+LoadingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0B62B1B4F0B005FE035 /* UIViewController+LoadingDelegate.swift */; };
+		88A9C0B72B1B4F0B005FE035 /* UIViewController+LoadingDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0B62B1B4F0B005FE035 /* UIViewController+LoadingDisplayable.swift */; };
 		88A9C0B92B1B5080005FE035 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0B82B1B5080005FE035 /* ViewCodeProtocol.swift */; };
 		88A9C0BC2B1B5169005FE035 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0BB2B1B5169005FE035 /* Collection+Extensions.swift */; };
 		88A9C0BE2B1B51FC005FE035 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0BD2B1B51FC005FE035 /* UITableView+Extensions.swift */; };
@@ -51,6 +51,16 @@
 		88A9C0F62B1B6548005FE035 /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0F52B1B6548005FE035 /* Circuit.swift */; };
 		88A9C0F82B1B6551005FE035 /* RaceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0F72B1B6551005FE035 /* RaceResult.swift */; };
 		88A9C0FA2B1B655F005FE035 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0F92B1B655F005FE035 /* Driver.swift */; };
+		88A9C0FD2B1B7161005FE035 /* SeasonAPIInterfaceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0FC2B1B7161005FE035 /* SeasonAPIInterfaceSpy.swift */; };
+		88A9C1012B1B72DD005FE035 /* SeasonRacesListingViewModelDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1002B1B72DD005FE035 /* SeasonRacesListingViewModelDelegateSpy.swift */; };
+		88A9C1032B1B7355005FE035 /* LoadingDisplayableSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1022B1B7355005FE035 /* LoadingDisplayableSpy.swift */; };
+		88A9C1062B1B7389005FE035 /* SeasonInfo+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1052B1B7389005FE035 /* SeasonInfo+Fixture.swift */; };
+		88A9C1082B1B7463005FE035 /* UIViewController+ErrorDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1072B1B7463005FE035 /* UIViewController+ErrorDisplayable.swift */; };
+		88A9C10A2B1B74B0005FE035 /* ErrorDisplayableSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1092B1B74B0005FE035 /* ErrorDisplayableSpy.swift */; };
+		88A9C10C2B1B7552005FE035 /* SeasonRacesListingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C10B2B1B7552005FE035 /* SeasonRacesListingViewControllerTests.swift */; };
+		88A9C10E2B1B7582005FE035 /* SeasonRacesListingComponentInterfaceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C10D2B1B7581005FE035 /* SeasonRacesListingComponentInterfaceSpy.swift */; };
+		88A9C1102B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C10F2B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift */; };
+		88A9C1122B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1112B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +93,7 @@
 		88A9C0272B1B3F63005FE035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88A9C0292B1B3F63005FE035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A9C02E2B1B3F64005FE035 /* F1 DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "F1 DataTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88A9C0322B1B3F64005FE035 /* F1_DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_DataTests.swift; sourceTree = "<group>"; };
+		88A9C0322B1B3F64005FE035 /* SeasonRacesListingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewModelTests.swift; sourceTree = "<group>"; };
 		88A9C0522B1B4037005FE035 /* SeasonRacesListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewController.swift; sourceTree = "<group>"; };
 		88A9C0542B1B403F005FE035 /* SeasonRacesListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewModel.swift; sourceTree = "<group>"; };
 		88A9C0562B1B4046005FE035 /* SeasonRacesListingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingComponent.swift; sourceTree = "<group>"; };
@@ -97,7 +107,7 @@
 		88A9C0AE2B1B4BD9005FE035 /* NetworkingConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConfiguration.swift; sourceTree = "<group>"; };
 		88A9C0B12B1B4C3D005FE035 /* SeasonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonInfo.swift; sourceTree = "<group>"; };
 		88A9C0B32B1B4DCC005FE035 /* SeasonRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRequests.swift; sourceTree = "<group>"; };
-		88A9C0B62B1B4F0B005FE035 /* UIViewController+LoadingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadingDelegate.swift"; sourceTree = "<group>"; };
+		88A9C0B62B1B4F0B005FE035 /* UIViewController+LoadingDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadingDisplayable.swift"; sourceTree = "<group>"; };
 		88A9C0B82B1B5080005FE035 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		88A9C0BB2B1B5169005FE035 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		88A9C0BD2B1B51FC005FE035 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
@@ -122,6 +132,16 @@
 		88A9C0F52B1B6548005FE035 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
 		88A9C0F72B1B6551005FE035 /* RaceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceResult.swift; sourceTree = "<group>"; };
 		88A9C0F92B1B655F005FE035 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		88A9C0FC2B1B7161005FE035 /* SeasonAPIInterfaceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonAPIInterfaceSpy.swift; sourceTree = "<group>"; };
+		88A9C1002B1B72DD005FE035 /* SeasonRacesListingViewModelDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewModelDelegateSpy.swift; sourceTree = "<group>"; };
+		88A9C1022B1B7355005FE035 /* LoadingDisplayableSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDisplayableSpy.swift; sourceTree = "<group>"; };
+		88A9C1052B1B7389005FE035 /* SeasonInfo+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SeasonInfo+Fixture.swift"; sourceTree = "<group>"; };
+		88A9C1072B1B7463005FE035 /* UIViewController+ErrorDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorDisplayable.swift"; sourceTree = "<group>"; };
+		88A9C1092B1B74B0005FE035 /* ErrorDisplayableSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDisplayableSpy.swift; sourceTree = "<group>"; };
+		88A9C10B2B1B7552005FE035 /* SeasonRacesListingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewControllerTests.swift; sourceTree = "<group>"; };
+		88A9C10D2B1B7581005FE035 /* SeasonRacesListingComponentInterfaceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingComponentInterfaceSpy.swift; sourceTree = "<group>"; };
+		88A9C10F2B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingRouterInterfaceSpy.swift; sourceTree = "<group>"; };
+		88A9C1112B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewModelInterfaceSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +202,9 @@
 		88A9C0312B1B3F64005FE035 /* F1 DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				88A9C0322B1B3F64005FE035 /* F1_DataTests.swift */,
+				88A9C0FB2B1B7156005FE035 /* Doubles */,
+				88A9C1042B1B737E005FE035 /* Fixtures */,
+				88A9C0FE2B1B72C9005FE035 /* SeasonRacesListing */,
 			);
 			path = "F1 DataTests";
 			sourceTree = "<group>";
@@ -286,7 +308,8 @@
 		88A9C0B52B1B4EF5005FE035 /* LoadingDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				88A9C0B62B1B4F0B005FE035 /* UIViewController+LoadingDelegate.swift */,
+				88A9C0B62B1B4F0B005FE035 /* UIViewController+LoadingDisplayable.swift */,
+				88A9C1072B1B7463005FE035 /* UIViewController+ErrorDisplayable.swift */,
 			);
 			path = LoadingDelegate;
 			sourceTree = "<group>";
@@ -361,6 +384,45 @@
 				88A9C0EB2B1B60AB005FE035 /* RaceResultsLocalizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		88A9C0FB2B1B7156005FE035 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C1092B1B74B0005FE035 /* ErrorDisplayableSpy.swift */,
+				88A9C1022B1B7355005FE035 /* LoadingDisplayableSpy.swift */,
+				88A9C0FC2B1B7161005FE035 /* SeasonAPIInterfaceSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		88A9C0FE2B1B72C9005FE035 /* SeasonRacesListing */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C0FF2B1B72D2005FE035 /* Doubles */,
+				88A9C10B2B1B7552005FE035 /* SeasonRacesListingViewControllerTests.swift */,
+				88A9C0322B1B3F64005FE035 /* SeasonRacesListingViewModelTests.swift */,
+			);
+			path = SeasonRacesListing;
+			sourceTree = "<group>";
+		};
+		88A9C0FF2B1B72D2005FE035 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C10D2B1B7581005FE035 /* SeasonRacesListingComponentInterfaceSpy.swift */,
+				88A9C10F2B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift */,
+				88A9C1002B1B72DD005FE035 /* SeasonRacesListingViewModelDelegateSpy.swift */,
+				88A9C1112B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		88A9C1042B1B737E005FE035 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C1052B1B7389005FE035 /* SeasonInfo+Fixture.swift */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,7 +543,7 @@
 				88A9C0C62B1B5717005FE035 /* DependenciesHandler.swift in Sources */,
 				88A9C0C42B1B551D005FE035 /* UIStackView+Extensions.swift in Sources */,
 				88A9C0AD2B1B4BB6005FE035 /* SeasonAPI.swift in Sources */,
-				88A9C0B72B1B4F0B005FE035 /* UIViewController+LoadingDelegate.swift in Sources */,
+				88A9C0B72B1B4F0B005FE035 /* UIViewController+LoadingDisplayable.swift in Sources */,
 				88A9C0AA2B1B4B29005FE035 /* NetworkingRequest.swift in Sources */,
 				88A9C0A82B1B48B2005FE035 /* Networking.swift in Sources */,
 				88A9C0B92B1B5080005FE035 /* ViewCodeProtocol.swift in Sources */,
@@ -498,6 +560,7 @@
 				88A9C0572B1B4046005FE035 /* SeasonRacesListingComponent.swift in Sources */,
 				88A9C0E22B1B5F7C005FE035 /* RaceResultsViewModel.swift in Sources */,
 				88A9C0B22B1B4C3D005FE035 /* SeasonInfo.swift in Sources */,
+				88A9C1082B1B7463005FE035 /* UIViewController+ErrorDisplayable.swift in Sources */,
 				88A9C0C22B1B52F5005FE035 /* Spacing.swift in Sources */,
 				88A9C0B42B1B4DCC005FE035 /* SeasonRequests.swift in Sources */,
 				88A9C0532B1B4037005FE035 /* SeasonRacesListingViewController.swift in Sources */,
@@ -518,7 +581,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A9C0332B1B3F64005FE035 /* F1_DataTests.swift in Sources */,
+				88A9C1102B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift in Sources */,
+				88A9C10A2B1B74B0005FE035 /* ErrorDisplayableSpy.swift in Sources */,
+				88A9C10E2B1B7582005FE035 /* SeasonRacesListingComponentInterfaceSpy.swift in Sources */,
+				88A9C1032B1B7355005FE035 /* LoadingDisplayableSpy.swift in Sources */,
+				88A9C1012B1B72DD005FE035 /* SeasonRacesListingViewModelDelegateSpy.swift in Sources */,
+				88A9C1062B1B7389005FE035 /* SeasonInfo+Fixture.swift in Sources */,
+				88A9C0FD2B1B7161005FE035 /* SeasonAPIInterfaceSpy.swift in Sources */,
+				88A9C0332B1B3F64005FE035 /* SeasonRacesListingViewModelTests.swift in Sources */,
+				88A9C1122B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift in Sources */,
+				88A9C10C2B1B7552005FE035 /* SeasonRacesListingViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,13 @@ protocol RaceResultsComponentDelegate: AnyObject {
 
 }
 
-final class RaceResultsComponent: UIView {
+protocol RaceResultsComponentInterface: UIView {
+    var tableViewDelegates: (UITableViewDataSource & UITableViewDelegate)? { get set }
+
+    func reloadData()
+}
+
+final class RaceResultsComponent: UIView, RaceResultsComponentInterface {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorStyle = .none

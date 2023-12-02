@@ -1,6 +1,6 @@
 import Foundation
 
-protocol SeasonRacesListingViewModelDelegate: AnyObject, LoadingDelegate {
+protocol SeasonRacesListingViewModelDelegate: AnyObject, LoadingDisplayable, ErrorDisplayable {
     func didFetchSeasonRaces()
 }
 
@@ -54,8 +54,8 @@ final class SeasonRacesListingViewModel: SeasonRacesListingViewModelInterface {
             case .success(let response):
                 dataStore.season = response.mrData.raceTable
                 delegate?.didFetchSeasonRaces()
-            case .failure(let error):
-                print(error)
+            case .failure:
+                delegate?.showError()
             }
         }
     }

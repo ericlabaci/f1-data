@@ -6,7 +6,13 @@ protocol SeasonRacesListingComponentDelegate: AnyObject {
 
 }
 
-final class SeasonRacesListingComponent: UIView {
+protocol SeasonRacesListingComponentInterface: UIView {
+    var tableViewDelegates: (UITableViewDataSource & UITableViewDelegate)? { get set }
+
+    func reloadData()
+}
+
+final class SeasonRacesListingComponent: UIView, SeasonRacesListingComponentInterface {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorStyle = .none

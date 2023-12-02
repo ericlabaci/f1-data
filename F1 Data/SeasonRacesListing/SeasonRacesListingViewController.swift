@@ -2,12 +2,12 @@ import Foundation
 import UIKit
 
 final class SeasonRacesListingViewController: UIViewController {
-    private let customView: SeasonRacesListingComponent
+    private let customView: SeasonRacesListingComponentInterface
     private let router: SeasonRacesListingRouterInterface
     private let viewModel: SeasonRacesListingViewModelInterface
 
     init(
-        customView: SeasonRacesListingComponent,
+        customView: SeasonRacesListingComponentInterface,
         router: SeasonRacesListingRouterInterface,
         viewModel: SeasonRacesListingViewModelInterface
     ) {

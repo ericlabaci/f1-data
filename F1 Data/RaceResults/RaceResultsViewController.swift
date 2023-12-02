@@ -2,12 +2,12 @@ import Foundation
 import UIKit
 
 final class RaceResultsViewController: UIViewController {
-    private let customView: RaceResultsComponent
+    private let customView: RaceResultsComponentInterface
     private let router: RaceResultsRouterInterface
     private let viewModel: RaceResultsViewModelInterface
 
     init(
-        customView: RaceResultsComponent,
+        customView: RaceResultsComponentInterface,
         router: RaceResultsRouterInterface,
         viewModel: RaceResultsViewModelInterface
     ) {
