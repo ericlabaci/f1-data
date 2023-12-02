@@ -16,6 +16,24 @@ internal enum RaceResultsStrings {
       return RaceResultsStrings.tr("RaceResultsLocalizable", "Navigation.Title", String(describing: p1), String(describing: p2), fallback: "%@ %@")
     }
   }
+  internal enum PointsGained {
+    /// Points Gained %@
+    internal static func title(_ p1: Any) -> String {
+      return RaceResultsStrings.tr("RaceResultsLocalizable", "PointsGained.Title", String(describing: p1), fallback: "Points Gained %@")
+    }
+  }
+  internal enum PositionsGained {
+    /// Positions %@
+    internal static func title(_ p1: Any) -> String {
+      return RaceResultsStrings.tr("RaceResultsLocalizable", "PositionsGained.Title", String(describing: p1), fallback: "Positions %@")
+    }
+  }
+  internal enum StartingPosition {
+    /// Starting Position %@
+    internal static func title(_ p1: Any) -> String {
+      return RaceResultsStrings.tr("RaceResultsLocalizable", "StartingPosition.Title", String(describing: p1), fallback: "Starting Position %@")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

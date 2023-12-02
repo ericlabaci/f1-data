@@ -1,1 +1,4 @@
 "Navigation.Title" = "%@ %@";
+"PointsGained.Title" = "Points Gained %@";
+"StartingPosition.Title" = "Starting Position %@";
+"PositionsGained.Title" = "Positions %@";

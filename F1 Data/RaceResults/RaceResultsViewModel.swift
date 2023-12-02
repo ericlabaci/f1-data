@@ -26,6 +26,13 @@ final class RaceResultsViewModelDataStore {
 final class RaceResultsViewModel: RaceResultsViewModelInterface {
     private let dataStore: RaceResultsViewModelDataStore
     private let seasonAPI: SeasonAPIInterface
+    private let positionsGainedNumberFormatter = {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.positivePrefix = "+"
+        numberFormatter.negativePrefix = "-"
+        numberFormatter.zeroSymbol = "0"
+        return numberFormatter
+    }()
 
     var navigationTitle: String {
         guard let race = dataStore.race else {
@@ -70,9 +77,23 @@ final class RaceResultsViewModel: RaceResultsViewModelInterface {
             return nil
         }
 
+        let positionsGained: String = {
+            guard
+                let gridPosition = Int(raceResult.grid),
+                let finalPosition = Int(raceResult.position)
+            else {
+                return ""
+            }
+            let positionDelta = gridPosition - finalPosition
+            return positionsGainedNumberFormatter.string(from: NSNumber(value: positionDelta)) ?? ""
+        }()
+
         return RaceResultsTableViewCell.Configuration(
             position: raceResult.position,
-            driverName: "\(raceResult.driver.givenName) \(raceResult.driver.familyName)"
+            driverName: "\(raceResult.driver.givenName) \(raceResult.driver.familyName)",
+            pointsGained: RaceResultsStrings.PointsGained.title(raceResult.points),
+            startingPosition: RaceResultsStrings.StartingPosition.title(raceResult.grid),
+            positionsGained: RaceResultsStrings.PositionsGained.title(positionsGained)
         )
     }
 }
