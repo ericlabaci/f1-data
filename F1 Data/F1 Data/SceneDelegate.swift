@@ -1,5 +1,7 @@
 import UIKit
 
+let dependenciesHandler = DependenciesHandler()
+
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 

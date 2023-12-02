@@ -2,13 +2,9 @@ import Foundation
 import UIKit
 
 struct SeasonRacesListingFeature {
-    init() {
-
-    }
-
     func viewController() -> UIViewController {
         let customView = SeasonRacesListingComponent()
-        let viewModel = SeasonRacesListingViewModel()
+        let viewModel = SeasonRacesListingViewModel(seasonAPI: dependenciesHandler.seasonAPI)
         let viewController = SeasonRacesListingViewController(
             customView: customView,
             viewModel: viewModel
