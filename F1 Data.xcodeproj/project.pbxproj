@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		88A9C01C2B1B3F5A005FE035 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C01B2B1B3F5A005FE035 /* AppDelegate.swift */; };
 		88A9C01E2B1B3F5A005FE035 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C01D2B1B3F5A005FE035 /* SceneDelegate.swift */; };
-		88A9C0202B1B3F5A005FE035 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C01F2B1B3F5A005FE035 /* ViewController.swift */; };
-		88A9C0232B1B3F5A005FE035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0212B1B3F5A005FE035 /* Main.storyboard */; };
-		88A9C0252B1B3F63005FE035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0242B1B3F63005FE035 /* Assets.xcassets */; };
 		88A9C0282B1B3F63005FE035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0262B1B3F63005FE035 /* LaunchScreen.storyboard */; };
 		88A9C0332B1B3F64005FE035 /* F1_DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0322B1B3F64005FE035 /* F1_DataTests.swift */; };
 		88A9C03D2B1B3F64005FE035 /* F1_DataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C03C2B1B3F64005FE035 /* F1_DataUITests.swift */; };
 		88A9C03F2B1B3F64005FE035 /* F1_DataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C03E2B1B3F64005FE035 /* F1_DataUITestsLaunchTests.swift */; };
 		88A9C04D2B1B3FC1005FE035 /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = 88A9C04C2B1B3FC1005FE035 /* Cartography */; };
 		88A9C0502B1B3FE5005FE035 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 88A9C04F2B1B3FE5005FE035 /* Alamofire */; };
+		88A9C0532B1B4037005FE035 /* SeasonRacesListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0522B1B4037005FE035 /* SeasonRacesListingViewController.swift */; };
+		88A9C0552B1B403F005FE035 /* SeasonRacesListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0542B1B403F005FE035 /* SeasonRacesListingViewModel.swift */; };
+		88A9C0572B1B4046005FE035 /* SeasonRacesListingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0562B1B4046005FE035 /* SeasonRacesListingComponent.swift */; };
+		88A9C09C2B1B4536005FE035 /* SeasonRacesListingFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C09B2B1B4536005FE035 /* SeasonRacesListingFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +38,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		88A9C0812B1B443C005FE035 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		88A9C0182B1B3F5A005FE035 /* F1 Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F1 Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A9C01B2B1B3F5A005FE035 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88A9C01D2B1B3F5A005FE035 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		88A9C01F2B1B3F5A005FE035 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		88A9C0222B1B3F5A005FE035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		88A9C0242B1B3F63005FE035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88A9C0272B1B3F63005FE035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88A9C0292B1B3F63005FE035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88A9C02E2B1B3F64005FE035 /* F1 DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "F1 DataTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +62,10 @@
 		88A9C0382B1B3F64005FE035 /* F1 DataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "F1 DataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A9C03C2B1B3F64005FE035 /* F1_DataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_DataUITests.swift; sourceTree = "<group>"; };
 		88A9C03E2B1B3F64005FE035 /* F1_DataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_DataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88A9C0522B1B4037005FE035 /* SeasonRacesListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewController.swift; sourceTree = "<group>"; };
+		88A9C0542B1B403F005FE035 /* SeasonRacesListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewModel.swift; sourceTree = "<group>"; };
+		88A9C0562B1B4046005FE035 /* SeasonRacesListingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingComponent.swift; sourceTree = "<group>"; };
+		88A9C09B2B1B4536005FE035 /* SeasonRacesListingFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +102,7 @@
 				88A9C0312B1B3F64005FE035 /* F1 DataTests */,
 				88A9C03B2B1B3F64005FE035 /* F1 DataUITests */,
 				88A9C0192B1B3F5A005FE035 /* Products */,
+				88A9C0752B1B43FF005FE035 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +119,8 @@
 		88A9C01A2B1B3F5A005FE035 /* F1 Data */ = {
 			isa = PBXGroup;
 			children = (
-				88A9C01B2B1B3F5A005FE035 /* AppDelegate.swift */,
-				88A9C01D2B1B3F5A005FE035 /* SceneDelegate.swift */,
-				88A9C01F2B1B3F5A005FE035 /* ViewController.swift */,
-				88A9C0212B1B3F5A005FE035 /* Main.storyboard */,
-				88A9C0242B1B3F63005FE035 /* Assets.xcassets */,
-				88A9C0262B1B3F63005FE035 /* LaunchScreen.storyboard */,
-				88A9C0292B1B3F63005FE035 /* Info.plist */,
+				88A9C05D2B1B4101005FE035 /* F1 Data */,
+				88A9C0512B1B4029005FE035 /* SeasonRacesListing */,
 			);
 			path = "F1 Data";
 			sourceTree = "<group>";
@@ -131,6 +142,35 @@
 			path = "F1 DataUITests";
 			sourceTree = "<group>";
 		};
+		88A9C0512B1B4029005FE035 /* SeasonRacesListing */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C0522B1B4037005FE035 /* SeasonRacesListingViewController.swift */,
+				88A9C0542B1B403F005FE035 /* SeasonRacesListingViewModel.swift */,
+				88A9C0562B1B4046005FE035 /* SeasonRacesListingComponent.swift */,
+				88A9C09B2B1B4536005FE035 /* SeasonRacesListingFeature.swift */,
+			);
+			path = SeasonRacesListing;
+			sourceTree = "<group>";
+		};
+		88A9C05D2B1B4101005FE035 /* F1 Data */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C01B2B1B3F5A005FE035 /* AppDelegate.swift */,
+				88A9C01D2B1B3F5A005FE035 /* SceneDelegate.swift */,
+				88A9C0262B1B3F63005FE035 /* LaunchScreen.storyboard */,
+				88A9C0292B1B3F63005FE035 /* Info.plist */,
+			);
+			path = "F1 Data";
+			sourceTree = "<group>";
+		};
+		88A9C0752B1B43FF005FE035 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +181,7 @@
 				88A9C0142B1B3F5A005FE035 /* Sources */,
 				88A9C0152B1B3F5A005FE035 /* Frameworks */,
 				88A9C0162B1B3F5A005FE035 /* Resources */,
+				88A9C0812B1B443C005FE035 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,8 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A9C0282B1B3F63005FE035 /* LaunchScreen.storyboard in Resources */,
-				88A9C0252B1B3F63005FE035 /* Assets.xcassets in Resources */,
-				88A9C0232B1B3F5A005FE035 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A9C0202B1B3F5A005FE035 /* ViewController.swift in Sources */,
 				88A9C01C2B1B3F5A005FE035 /* AppDelegate.swift in Sources */,
+				88A9C0552B1B403F005FE035 /* SeasonRacesListingViewModel.swift in Sources */,
 				88A9C01E2B1B3F5A005FE035 /* SceneDelegate.swift in Sources */,
+				88A9C0572B1B4046005FE035 /* SeasonRacesListingComponent.swift in Sources */,
+				88A9C0532B1B4037005FE035 /* SeasonRacesListingViewController.swift in Sources */,
+				88A9C09C2B1B4536005FE035 /* SeasonRacesListingFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +351,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		88A9C0212B1B3F5A005FE035 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88A9C0222B1B3F5A005FE035 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		88A9C0262B1B3F63005FE035 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -450,10 +484,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "F1 Data/Info.plist";
+				INFOPLIST_FILE = "F1 Data/F1 Data/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -477,10 +510,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "F1 Data/Info.plist";
+				INFOPLIST_FILE = "F1 Data/F1 Data/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
