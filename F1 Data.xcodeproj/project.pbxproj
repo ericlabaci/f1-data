@@ -36,6 +36,8 @@
 		88A9C0C22B1B52F5005FE035 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0C12B1B52F5005FE035 /* Spacing.swift */; };
 		88A9C0C42B1B551D005FE035 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0C32B1B551D005FE035 /* UIStackView+Extensions.swift */; };
 		88A9C0C62B1B5717005FE035 /* DependenciesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0C52B1B5717005FE035 /* DependenciesHandler.swift */; };
+		88A9C0C92B1B5858005FE035 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0C82B1B5858005FE035 /* Localizable.strings */; };
+		88A9C0CF2B1B5906005FE035 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0CE2B1B5906005FE035 /* Strings+Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		88A9C0C12B1B52F5005FE035 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		88A9C0C32B1B551D005FE035 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		88A9C0C52B1B5717005FE035 /* DependenciesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesHandler.swift; sourceTree = "<group>"; };
+		88A9C0C82B1B5858005FE035 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		88A9C0CE2B1B5906005FE035 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 		88A9C0512B1B4029005FE035 /* SeasonRacesListing */ = {
 			isa = PBXGroup;
 			children = (
+				88A9C0CD2B1B58FD005FE035 /* Generated */,
+				88A9C0C72B1B5843005FE035 /* Resources */,
 				88A9C0562B1B4046005FE035 /* SeasonRacesListingComponent.swift */,
 				88A9C09B2B1B4536005FE035 /* SeasonRacesListingFeature.swift */,
 				88A9C0522B1B4037005FE035 /* SeasonRacesListingViewController.swift */,
@@ -284,6 +290,22 @@
 				88A9C0BB2B1B5169005FE035 /* Collection+Extensions.swift */,
 			);
 			path = FoundationUtils;
+			sourceTree = "<group>";
+		};
+		88A9C0C72B1B5843005FE035 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C0C82B1B5858005FE035 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		88A9C0CD2B1B58FD005FE035 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C0CE2B1B5906005FE035 /* Strings+Generated.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A9C0282B1B3F63005FE035 /* LaunchScreen.storyboard in Resources */,
+				88A9C0C92B1B5858005FE035 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +461,7 @@
 				88A9C0552B1B403F005FE035 /* SeasonRacesListingViewModel.swift in Sources */,
 				88A9C01E2B1B3F5A005FE035 /* SceneDelegate.swift in Sources */,
 				88A9C0C02B1B5233005FE035 /* SeasonRaceTableViewCell.swift in Sources */,
+				88A9C0CF2B1B5906005FE035 /* Strings+Generated.swift in Sources */,
 				88A9C0572B1B4046005FE035 /* SeasonRacesListingComponent.swift in Sources */,
 				88A9C0B22B1B4C3D005FE035 /* SeasonInfo.swift in Sources */,
 				88A9C0C22B1B52F5005FE035 /* Spacing.swift in Sources */,

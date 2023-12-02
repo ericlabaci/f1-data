@@ -27,7 +27,7 @@ final class SeasonRacesListingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "Season Races"
+        navigationItem.title = L10n.Navigation.title
 
         viewModel.fetchSeasonRaces()
     }
