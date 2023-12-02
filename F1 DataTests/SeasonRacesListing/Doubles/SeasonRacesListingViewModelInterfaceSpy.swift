@@ -19,8 +19,8 @@ final class SeasonRacesListingViewModelInterfaceSpy: SeasonRacesListingViewModel
 
     private(set) var raceCalled = false
     private(set) var raceRowPassed: Int?
-    var raceReturn: SeasonInfo.MRData.RaceTable.Race?
-    func race(row: Int) -> SeasonInfo.MRData.RaceTable.Race? {
+    var raceReturn: Race?
+    func race(row: Int) -> Race? {
         raceCalled = true
         raceRowPassed = row
         return raceReturn

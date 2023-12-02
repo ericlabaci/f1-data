@@ -62,6 +62,7 @@
 		88A9C1102B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C10F2B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift */; };
 		88A9C1122B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1112B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift */; };
 		88A9C1142B1B7853005FE035 /* LoadingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1132B1B7853005FE035 /* LoadingComponent.swift */; };
+		88A9C1172B1B79C7005FE035 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1162B1B79C7005FE035 /* Race.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,7 @@
 		88A9C10F2B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingRouterInterfaceSpy.swift; sourceTree = "<group>"; };
 		88A9C1112B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewModelInterfaceSpy.swift; sourceTree = "<group>"; };
 		88A9C1132B1B7853005FE035 /* LoadingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingComponent.swift; sourceTree = "<group>"; };
+		88A9C1162B1B79C7005FE035 /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 			children = (
 				88A9C0F52B1B6548005FE035 /* Circuit.swift */,
 				88A9C0F92B1B655F005FE035 /* Driver.swift */,
+				88A9C1162B1B79C7005FE035 /* Race.swift */,
 				88A9C0F72B1B6551005FE035 /* RaceResult.swift */,
 				88A9C0B12B1B4C3D005FE035 /* SeasonInfo.swift */,
 			);
@@ -579,6 +582,7 @@
 				88A9C0F22B1B6156005FE035 /* SeasonRacesListingStrings+Generated.swift in Sources */,
 				88A9C0E52B1B5F7C005FE035 /* RaceResultsFeature.swift in Sources */,
 				88A9C0D52B1B5A2A005FE035 /* XCAssets+Generated.swift in Sources */,
+				88A9C1172B1B79C7005FE035 /* Race.swift in Sources */,
 				88A9C0BE2B1B51FC005FE035 /* UITableView+Extensions.swift in Sources */,
 				88A9C1142B1B7853005FE035 /* LoadingComponent.swift in Sources */,
 				88A9C09C2B1B4536005FE035 /* SeasonRacesListingFeature.swift in Sources */,

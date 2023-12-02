@@ -15,7 +15,7 @@ protocol RaceResultsViewModelInterface: AnyObject {
 final class RaceResultsViewModelDataStore {
     let season: String
     let round: String
-    var race: SeasonInfo.MRData.RaceTable.Race?
+    var race: Race?
 
     init(season: String, round: String) {
         self.season = season

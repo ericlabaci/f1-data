@@ -7,7 +7,7 @@ protocol SeasonRacesListingViewModelDelegate: AnyObject, LoadingDisplayable, Err
 protocol SeasonRacesListingViewModelInterface: AnyObject {
     func fetchSeasonRaces()
     func raceExternalLink(id: String) -> String?
-    func race(row: Int) -> SeasonInfo.MRData.RaceTable.Race?
+    func race(row: Int) -> Race?
     func numberOfRows() -> Int
     func configurationFor(row: Int) -> SeasonRaceTableViewCell.Configuration?
 }
@@ -64,7 +64,7 @@ final class SeasonRacesListingViewModel: SeasonRacesListingViewModelInterface {
         return dataStore.season?.races.first(where: { $0.id == id })?.url
     }
 
-    func race(row: Int) -> SeasonInfo.MRData.RaceTable.Race? {
+    func race(row: Int) -> Race? {
         return dataStore.season?.races[safe: row]
     }
 
