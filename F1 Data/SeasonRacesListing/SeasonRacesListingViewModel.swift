@@ -82,8 +82,8 @@ final class SeasonRacesListingViewModel: SeasonRacesListingViewModelInterface {
         return SeasonRaceTableViewCell.Configuration(
             id: race.id,
             raceName: race.raceName,
-            circuitName: race.circuit.circuitName,
-            raceDate: raceDate
+            circuitName: L10n.CircuitName.title(race.circuit.circuitName),
+            raceDate: L10n.RaceDate.title(raceDate)
         )
     }
 }

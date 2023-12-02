@@ -13,7 +13,7 @@ final class SeasonRaceTableViewCell: UITableViewCell {
         return stackView
     }()
 
-    private let contentStackView = UIStackView(axis: .vertical, spacing: Spacing.c12)
+    private let contentStackView = UIStackView(axis: .vertical, spacing: Spacing.c8)
 
     private let raceNameLabel: LabelComponent = {
         let label = LabelComponent()

@@ -10,9 +10,21 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum CircuitName {
+    /// Circuit Name: %@
+    internal static func title(_ p1: Any) -> String {
+      return L10n.tr("Localizable", "CircuitName.Title", String(describing: p1), fallback: "Circuit Name: %@")
+    }
+  }
   internal enum Navigation {
     /// Season Races
     internal static let title = L10n.tr("Localizable", "Navigation.Title", fallback: "Season Races")
+  }
+  internal enum RaceDate {
+    /// Race Date: %@
+    internal static func title(_ p1: Any) -> String {
+      return L10n.tr("Localizable", "RaceDate.Title", String(describing: p1), fallback: "Race Date: %@")
+    }
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

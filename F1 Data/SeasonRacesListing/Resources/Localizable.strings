@@ -1,1 +1,3 @@
 "Navigation.Title" = "Season Races";
+"CircuitName.Title" = "Circuit Name: %@";
+"RaceDate.Title" = "Race Date: %@";
