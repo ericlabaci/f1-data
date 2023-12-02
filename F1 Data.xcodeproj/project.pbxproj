@@ -41,6 +41,7 @@
 		88A9C0D22B1B597E005FE035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0D12B1B597E005FE035 /* Assets.xcassets */; };
 		88A9C0D52B1B5A2A005FE035 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0D42B1B5A2A005FE035 /* XCAssets+Generated.swift */; };
 		88A9C0D72B1B5A55005FE035 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0D62B1B5A55005FE035 /* Main.xcassets */; };
+		88A9C0D92B1B5C55005FE035 /* SeasonRacesListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0D82B1B5C55005FE035 /* SeasonRacesListingRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		88A9C0D12B1B597E005FE035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88A9C0D42B1B5A2A005FE035 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
 		88A9C0D62B1B5A55005FE035 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
+		88A9C0D82B1B5C55005FE035 /* SeasonRacesListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				88A9C0C72B1B5843005FE035 /* Resources */,
 				88A9C0562B1B4046005FE035 /* SeasonRacesListingComponent.swift */,
 				88A9C09B2B1B4536005FE035 /* SeasonRacesListingFeature.swift */,
+				88A9C0D82B1B5C55005FE035 /* SeasonRacesListingRouter.swift */,
 				88A9C0522B1B4037005FE035 /* SeasonRacesListingViewController.swift */,
 				88A9C0542B1B403F005FE035 /* SeasonRacesListingViewModel.swift */,
 				88A9C0BF2B1B5233005FE035 /* SeasonRaceTableViewCell.swift */,
@@ -210,11 +213,11 @@
 			isa = PBXGroup;
 			children = (
 				88A9C01B2B1B3F5A005FE035 /* AppDelegate.swift */,
-				88A9C01D2B1B3F5A005FE035 /* SceneDelegate.swift */,
 				88A9C0C52B1B5717005FE035 /* DependenciesHandler.swift */,
-				88A9C0262B1B3F63005FE035 /* LaunchScreen.storyboard */,
 				88A9C0292B1B3F63005FE035 /* Info.plist */,
+				88A9C0262B1B3F63005FE035 /* LaunchScreen.storyboard */,
 				88A9C0D62B1B5A55005FE035 /* Main.xcassets */,
+				88A9C01D2B1B3F5A005FE035 /* SceneDelegate.swift */,
 			);
 			path = "F1 Data";
 			sourceTree = "<group>";
@@ -229,11 +232,11 @@
 		88A9C09D2B1B46DF005FE035 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				88A9C0B52B1B4EF5005FE035 /* LoadingDelegate */,
 				88A9C09E2B1B46EA005FE035 /* LabelComponent */,
-				88A9C0B82B1B5080005FE035 /* ViewCodeProtocol.swift */,
-				88A9C0BD2B1B51FC005FE035 /* UITableView+Extensions.swift */,
+				88A9C0B52B1B4EF5005FE035 /* LoadingDelegate */,
 				88A9C0C32B1B551D005FE035 /* UIStackView+Extensions.swift */,
+				88A9C0BD2B1B51FC005FE035 /* UITableView+Extensions.swift */,
+				88A9C0B82B1B5080005FE035 /* ViewCodeProtocol.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -249,9 +252,9 @@
 		88A9C0A12B1B4712005FE035 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				88A9C0A22B1B471E005FE035 /* Typography.swift */,
 				88A9C0A42B1B47B0005FE035 /* Color.swift */,
 				88A9C0C12B1B52F5005FE035 /* Spacing.swift */,
+				88A9C0A22B1B471E005FE035 /* Typography.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -260,8 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				88A9C0A72B1B48B2005FE035 /* Networking.swift */,
-				88A9C0A92B1B4B29005FE035 /* NetworkingRequest.swift */,
 				88A9C0AE2B1B4BD9005FE035 /* NetworkingConfiguration.swift */,
+				88A9C0A92B1B4B29005FE035 /* NetworkingRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				88A9C0A32B1B471E005FE035 /* Typography.swift in Sources */,
 				88A9C0552B1B403F005FE035 /* SeasonRacesListingViewModel.swift in Sources */,
 				88A9C01E2B1B3F5A005FE035 /* SceneDelegate.swift in Sources */,
+				88A9C0D92B1B5C55005FE035 /* SeasonRacesListingRouter.swift in Sources */,
 				88A9C0C02B1B5233005FE035 /* SeasonRaceTableViewCell.swift in Sources */,
 				88A9C0CF2B1B5906005FE035 /* Strings+Generated.swift in Sources */,
 				88A9C0572B1B4046005FE035 /* SeasonRacesListingComponent.swift in Sources */,

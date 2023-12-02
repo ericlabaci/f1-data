@@ -38,6 +38,11 @@ extension SeasonInfo.MRData.RaceTable {
         let time: String
         let url: String
         let circuit: Circuit
+        let season: String
+
+        var id: String {
+            return season + round
+        }
 
         enum CodingKeys: String, CodingKey {
             case round
@@ -46,6 +51,7 @@ extension SeasonInfo.MRData.RaceTable {
             case time
             case url
             case circuit = "Circuit"
+            case season
         }
     }
 

@@ -6,6 +6,7 @@ protocol SeasonRacesListingViewModelDelegate: AnyObject, LoadingDelegate {
 
 protocol SeasonRacesListingViewModelInterface: AnyObject {
     func fetchSeasonRaces()
+    func raceExternalLink(id: String) -> String?
     func numberOfRows() -> Int
     func configurationFor(row: Int) -> SeasonRaceTableViewCell.Configuration?
 }
@@ -58,6 +59,10 @@ final class SeasonRacesListingViewModel: SeasonRacesListingViewModelInterface {
         }
     }
 
+    func raceExternalLink(id: String) -> String? {
+        return dataStore.season?.races.first(where: { $0.id == id })?.url
+    }
+
     func numberOfRows() -> Int {
         return dataStore.season?.races.count ?? 0
     }
@@ -75,6 +80,7 @@ final class SeasonRacesListingViewModel: SeasonRacesListingViewModelInterface {
         }()
 
         return SeasonRaceTableViewCell.Configuration(
+            id: race.id,
             raceName: race.raceName,
             circuitName: race.circuit.circuitName,
             raceDate: raceDate
