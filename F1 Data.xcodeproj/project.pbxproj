@@ -61,6 +61,7 @@
 		88A9C10E2B1B7582005FE035 /* SeasonRacesListingComponentInterfaceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C10D2B1B7581005FE035 /* SeasonRacesListingComponentInterfaceSpy.swift */; };
 		88A9C1102B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C10F2B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift */; };
 		88A9C1122B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1112B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift */; };
+		88A9C1142B1B7853005FE035 /* LoadingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C1132B1B7853005FE035 /* LoadingComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		88A9C10D2B1B7581005FE035 /* SeasonRacesListingComponentInterfaceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingComponentInterfaceSpy.swift; sourceTree = "<group>"; };
 		88A9C10F2B1B7594005FE035 /* SeasonRacesListingRouterInterfaceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingRouterInterfaceSpy.swift; sourceTree = "<group>"; };
 		88A9C1112B1B759B005FE035 /* SeasonRacesListingViewModelInterfaceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonRacesListingViewModelInterfaceSpy.swift; sourceTree = "<group>"; };
+		88A9C1132B1B7853005FE035 /* LoadingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,8 +249,9 @@
 		88A9C09D2B1B46DF005FE035 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				88A9C1152B1B7986005FE035 /* ErrorComponent */,
 				88A9C09E2B1B46EA005FE035 /* LabelComponent */,
-				88A9C0B52B1B4EF5005FE035 /* LoadingDelegate */,
+				88A9C0B52B1B4EF5005FE035 /* LoadingComponent */,
 				88A9C0C32B1B551D005FE035 /* UIStackView+Extensions.swift */,
 				88A9C0BD2B1B51FC005FE035 /* UITableView+Extensions.swift */,
 				88A9C0B82B1B5080005FE035 /* ViewCodeProtocol.swift */,
@@ -297,21 +300,21 @@
 		88A9C0B02B1B4C2F005FE035 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				88A9C0B12B1B4C3D005FE035 /* SeasonInfo.swift */,
-				88A9C0F92B1B655F005FE035 /* Driver.swift */,
 				88A9C0F52B1B6548005FE035 /* Circuit.swift */,
+				88A9C0F92B1B655F005FE035 /* Driver.swift */,
 				88A9C0F72B1B6551005FE035 /* RaceResult.swift */,
+				88A9C0B12B1B4C3D005FE035 /* SeasonInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		88A9C0B52B1B4EF5005FE035 /* LoadingDelegate */ = {
+		88A9C0B52B1B4EF5005FE035 /* LoadingComponent */ = {
 			isa = PBXGroup;
 			children = (
+				88A9C1132B1B7853005FE035 /* LoadingComponent.swift */,
 				88A9C0B62B1B4F0B005FE035 /* UIViewController+LoadingDisplayable.swift */,
-				88A9C1072B1B7463005FE035 /* UIViewController+ErrorDisplayable.swift */,
 			);
-			path = LoadingDelegate;
+			path = LoadingComponent;
 			sourceTree = "<group>";
 		};
 		88A9C0BA2B1B515C005FE035 /* FoundationUtils */ = {
@@ -423,6 +426,14 @@
 				88A9C1052B1B7389005FE035 /* SeasonInfo+Fixture.swift */,
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		88A9C1152B1B7986005FE035 /* ErrorComponent */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C1072B1B7463005FE035 /* UIViewController+ErrorDisplayable.swift */,
+			);
+			path = ErrorComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -569,6 +580,7 @@
 				88A9C0E52B1B5F7C005FE035 /* RaceResultsFeature.swift in Sources */,
 				88A9C0D52B1B5A2A005FE035 /* XCAssets+Generated.swift in Sources */,
 				88A9C0BE2B1B51FC005FE035 /* UITableView+Extensions.swift in Sources */,
+				88A9C1142B1B7853005FE035 /* LoadingComponent.swift in Sources */,
 				88A9C09C2B1B4536005FE035 /* SeasonRacesListingFeature.swift in Sources */,
 				88A9C0A52B1B47B0005FE035 /* Color.swift in Sources */,
 				88A9C0F42B1B618F005FE035 /* RaceResultsStrings+Generated.swift in Sources */,
