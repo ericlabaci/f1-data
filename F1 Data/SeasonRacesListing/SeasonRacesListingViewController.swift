@@ -30,7 +30,7 @@ final class SeasonRacesListingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = L10n.Navigation.title
+        navigationItem.title = SeasonRaceListingStrings.Navigation.title
 
         viewModel.fetchSeasonRaces()
     }
@@ -57,7 +57,13 @@ extension SeasonRacesListingViewController: UITableViewDataSource {
 }
 
 extension SeasonRacesListingViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let race = viewModel.race(row: indexPath.row) else {
+            return
+        }
 
+        router.openRaceResults(season: race.season, round: race.round)
+    }
 }
 
 extension SeasonRacesListingViewController: SeasonRacesListingViewModelDelegate {

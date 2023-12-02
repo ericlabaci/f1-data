@@ -13,6 +13,7 @@ struct SeasonRacesListingFeature {
         )
         customView.delegate = viewController
         viewModel.delegate = viewController
+        router.viewController = viewController
         return viewController
     }
 }

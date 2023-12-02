@@ -39,6 +39,7 @@ extension SeasonInfo.MRData.RaceTable {
         let url: String
         let circuit: Circuit
         let season: String
+        let results: [RaceResult]?
 
         var id: String {
             return season + round
@@ -52,11 +53,7 @@ extension SeasonInfo.MRData.RaceTable {
             case url
             case circuit = "Circuit"
             case season
+            case results = "Results"
         }
-    }
-
-    struct Circuit: Decodable {
-        let url: String
-        let circuitName: String
     }
 }

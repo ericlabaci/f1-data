@@ -11,11 +11,18 @@
 ##   Be sure that SwiftGen only parses ONE locale (typically Base.lproj, or en.lproj, or whichever your development region is); otherwise it will generate the same keys multiple times.
 ##   SwiftGen will parse all `.strings` files found in that folder.
 strings:
-  inputs:
-    - F1 Data/SeasonRacesListing/Resources/Localizable.strings
-  outputs:
-    - templateName: structured-swift5
-      output: F1 Data/SeasonRacesListing/Generated/Strings+Generated.swift
+  - inputs: F1 Data/SeasonRacesListing/Resources/SeasonRacesListingLocalizable.strings
+    outputs:
+      - templateName: structured-swift5
+        output: F1 Data/SeasonRacesListing/Generated/SeasonRacesListingStrings+Generated.swift
+        params:
+          enumName: SeasonRaceListingStrings
+  - inputs: F1 Data/RaceResults/Resources/RaceResultsLocalizable.strings
+    outputs:
+      - templateName: structured-swift5
+        output: F1 Data/RaceResults/Generated/RaceResultsStrings+Generated.swift
+        params:
+          enumName: RaceResultsStrings
 
 
 ## Generate constants for your Assets Catalogs, including constants for images, colors, ARKit resources, etc.
