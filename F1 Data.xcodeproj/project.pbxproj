@@ -38,6 +38,9 @@
 		88A9C0C62B1B5717005FE035 /* DependenciesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0C52B1B5717005FE035 /* DependenciesHandler.swift */; };
 		88A9C0C92B1B5858005FE035 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0C82B1B5858005FE035 /* Localizable.strings */; };
 		88A9C0CF2B1B5906005FE035 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0CE2B1B5906005FE035 /* Strings+Generated.swift */; };
+		88A9C0D22B1B597E005FE035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0D12B1B597E005FE035 /* Assets.xcassets */; };
+		88A9C0D52B1B5A2A005FE035 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A9C0D42B1B5A2A005FE035 /* XCAssets+Generated.swift */; };
+		88A9C0D72B1B5A55005FE035 /* Main.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A9C0D62B1B5A55005FE035 /* Main.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +107,9 @@
 		88A9C0C52B1B5717005FE035 /* DependenciesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesHandler.swift; sourceTree = "<group>"; };
 		88A9C0C82B1B5858005FE035 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		88A9C0CE2B1B5906005FE035 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		88A9C0D12B1B597E005FE035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88A9C0D42B1B5A2A005FE035 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		88A9C0D62B1B5A55005FE035 /* Main.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Main.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,11 +163,12 @@
 		88A9C01A2B1B3F5A005FE035 /* F1 Data */ = {
 			isa = PBXGroup;
 			children = (
-				88A9C0BA2B1B515C005FE035 /* FoundationUtils */,
-				88A9C0AB2B1B4B9D005FE035 /* SeasonAPI */,
-				88A9C0A62B1B48A4005FE035 /* Networking */,
+				88A9C0D02B1B596B005FE035 /* CommonImages */,
 				88A9C0A12B1B4712005FE035 /* DesignSystem */,
 				88A9C05D2B1B4101005FE035 /* F1 Data */,
+				88A9C0BA2B1B515C005FE035 /* FoundationUtils */,
+				88A9C0A62B1B48A4005FE035 /* Networking */,
+				88A9C0AB2B1B4B9D005FE035 /* SeasonAPI */,
 				88A9C0512B1B4029005FE035 /* SeasonRacesListing */,
 				88A9C09D2B1B46DF005FE035 /* UIComponents */,
 			);
@@ -207,6 +214,7 @@
 				88A9C0C52B1B5717005FE035 /* DependenciesHandler.swift */,
 				88A9C0262B1B3F63005FE035 /* LaunchScreen.storyboard */,
 				88A9C0292B1B3F63005FE035 /* Info.plist */,
+				88A9C0D62B1B5A55005FE035 /* Main.xcassets */,
 			);
 			path = "F1 Data";
 			sourceTree = "<group>";
@@ -304,6 +312,23 @@
 			isa = PBXGroup;
 			children = (
 				88A9C0CE2B1B5906005FE035 /* Strings+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		88A9C0D02B1B596B005FE035 /* CommonImages */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C0D32B1B59F1005FE035 /* Generated */,
+				88A9C0D12B1B597E005FE035 /* Assets.xcassets */,
+			);
+			path = CommonImages;
+			sourceTree = "<group>";
+		};
+		88A9C0D32B1B59F1005FE035 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				88A9C0D42B1B5A2A005FE035 /* XCAssets+Generated.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -422,6 +447,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A9C0282B1B3F63005FE035 /* LaunchScreen.storyboard in Resources */,
+				88A9C0D22B1B597E005FE035 /* Assets.xcassets in Resources */,
+				88A9C0D72B1B5A55005FE035 /* Main.xcassets in Resources */,
 				88A9C0C92B1B5858005FE035 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +494,7 @@
 				88A9C0C22B1B52F5005FE035 /* Spacing.swift in Sources */,
 				88A9C0B42B1B4DCC005FE035 /* SeasonRequests.swift in Sources */,
 				88A9C0532B1B4037005FE035 /* SeasonRacesListingViewController.swift in Sources */,
+				88A9C0D52B1B5A2A005FE035 /* XCAssets+Generated.swift in Sources */,
 				88A9C0BE2B1B51FC005FE035 /* UITableView+Extensions.swift in Sources */,
 				88A9C09C2B1B4536005FE035 /* SeasonRacesListingFeature.swift in Sources */,
 				88A9C0A52B1B47B0005FE035 /* Color.swift in Sources */,
